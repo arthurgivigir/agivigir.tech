@@ -36,6 +36,7 @@ Todo o texto fica nos dois JSON; mantenha os mesmos campos nos dois idiomas.
 
 - **Status** de podcasts e projetos: `live`, `paused`, `wip`, `guest` ou `featured` (rótulos em `ui.status`).
 - **App em destaque**: `"feature": true` no item de `dev.apps`.
+- **App com mais de um link**: troque `url` + `cta` por `links` (lista de `label` e `url`); o cartão deixa de ser um link só e mostra um botão para cada.
 - **Prévia de projeto web**: campo `thumb` na linha (imagem em `public/`).
 - **Capa de podcast**: `"cover": null` usa a capa gerada (gradiente laranja + onda). Para usar uma imagem, coloque o arquivo em `public/` e troque por `"cover": { "src": "capa.webp", "alt": "...", "width": 600, "height": 600 }`.
 - **Linhas** (`items` com `n`, `title`, `sub`, `note`): com `url` viram link; sem `url`, texto simples.

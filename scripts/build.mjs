@@ -122,7 +122,7 @@ function prepare(c, page, episodes) {
   d.pod.latest = eps('bdt', d.pod.latest);
   d.pod.guest = eps('adt', d.pod.guest);
   for (const k of ['web', 'oss', 'jobs', 'edu', 'links']) d.dev[k] = rows(d.dev[k]);
-  d.dev.apps.items = d.dev.apps.items.map(linkable);
+  d.dev.apps.items = d.dev.apps.items.map(it => ({ ...linkable(it), linkGroup: it.links?.length ? { items: it.links } : null }));
 
   const pageUrl = SITE + page.path;
   const person = {

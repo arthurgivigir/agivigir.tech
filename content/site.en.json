@@ -48,7 +48,7 @@
     "sliverRole": " · Podcaster",
     "about": {
       "title": "About",
-      "text": "I've been podcasting since 2020. Today I host Bom dia Tech, with the top tech news every Tuesday and Thursday, and I'm a recurring special guest on Área de Transferência. I also created A Era do Pixel, about movies, TV series and comics."
+      "text": "I've been podcasting since 2020. Today I host Bom dia Tech, with the top tech news every Tuesday and Thursday, and I'm a recurring guest on Área de Transferência. I also created A Era do Pixel, about movies, TV series and comics."
     },
     "shows": {
       "title": "Podcasts",
@@ -83,7 +83,7 @@
         },
         {
           "name": "Área de Transferência (ADT)",
-          "role": "Recurring special guest",
+          "role": "Recurring guest",
           "status": "guest",
           "description": "With Marcus Mendes, Guilherme Rambo, Gustavo Faria and Bruno Casemiro.",
           "meta": "Weekly, on Fridays · Gigahertz network",
@@ -179,14 +179,22 @@
           "status": "featured",
           "feature": true,
           "description": "iOS · what should I watch now, why, and how much is left? Pick a destination and follow a curated journey to the premiere, with progress and a countdown.",
-          "url": "https://apps.apple.com/br/app/up-universe-path/id6818353995",
-          "cta": "App Store ↗",
           "image": {
             "src": "up.webp",
             "alt": "Screens of the UP – Universe Path app",
             "width": 800,
             "height": 425
-          }
+          },
+          "links": [
+            {
+              "label": "App Store",
+              "url": "https://apps.apple.com/br/app/up-universe-path/id6818353995"
+            },
+            {
+              "label": "Website",
+              "url": "https://up.agivigir.tech"
+            }
+          ]
         },
         {
           "name": "Bollywood",
