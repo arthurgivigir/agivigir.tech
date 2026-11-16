@@ -48,7 +48,7 @@
     "sliverRole": " · Podcaster",
     "about": {
       "title": "Sobre",
-      "text": "Faço podcast desde 2020. Hoje apresento o Bom dia Tech, com as principais notícias de tecnologia toda terça e quinta, e sou convidado especial recorrente do Área de Transferência. Também criei o A Era do Pixel, sobre cinema, séries e quadrinhos."
+      "text": "Faço podcast desde 2020. Hoje apresento o Bom dia Tech, com as principais notícias de tecnologia toda terça e quinta, e sou convidado recorrente do Área de Transferência. Também criei o A Era do Pixel, sobre cinema, séries e quadrinhos."
     },
     "shows": {
       "title": "Podcasts",
@@ -83,7 +83,7 @@
         },
         {
           "name": "Área de Transferência (ADT)",
-          "role": "Convidado especial recorrente",
+          "role": "Convidado Recorrente",
           "status": "guest",
           "description": "Com Marcus Mendes, Guilherme Rambo, Gustavo Faria e Bruno Casemiro.",
           "meta": "Semanal, às sextas · rede Gigahertz",
@@ -179,14 +179,22 @@
           "status": "featured",
           "feature": true,
           "description": "iOS · o que assistir agora, por quê e quanto falta? Escolha um destino e siga uma jornada com curadoria até a estreia, com progresso e contagem regressiva.",
-          "url": "https://apps.apple.com/br/app/up-universe-path/id6818353995",
-          "cta": "App Store ↗",
           "image": {
             "src": "up.webp",
             "alt": "Telas do app UP – Universe Path",
             "width": 800,
             "height": 425
-          }
+          },
+          "links": [
+            {
+              "label": "App Store",
+              "url": "https://apps.apple.com/br/app/up-universe-path/id6818353995"
+            },
+            {
+              "label": "Site",
+              "url": "https://up.agivigir.tech"
+            }
+          ]
         },
         {
           "name": "Bollywood",

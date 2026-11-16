@@ -174,7 +174,7 @@
         <div class="cards">
 {{#items}}          <{{tag}} class="card{{#feature}} feature{{/feature}}"{{#url}} href="{{url}}"{{/url}}>
             {{#image}}<span class="media"><img src="{{@base}}{{src}}" alt="{{alt}}" width="{{width}}" height="{{height}}" loading="lazy" decoding="async"></span>{{/image}}{{^image}}<span class="media gen" aria-hidden="true"><span>{{mediaLabel}}</span></span>{{/image}}
-            <span class="body">{{#statusLabel}}<span class="badge {{status}}">{{statusLabel}}</span>{{/statusLabel}}<b>{{name}}</b><small>{{description}}</small>{{#cta}}<span class="cta">{{cta}}</span>{{/cta}}</span>
+            <span class="body">{{#statusLabel}}<span class="badge {{status}}">{{statusLabel}}</span>{{/statusLabel}}<b>{{name}}</b><small>{{description}}</small>{{#cta}}<span class="cta">{{cta}}</span>{{/cta}}{{#linkGroup}}<span class="chips links">{{#items}}<a class="chip" href="{{url}}">{{label}} <span aria-hidden="true">↗</span></a>{{/items}}</span>{{/linkGroup}}</span>
           </{{tag}}>
 {{/items}}        </div>
       </div>
