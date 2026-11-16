@@ -1,0 +1,404 @@
+{
+  "lang": "pt-BR",
+  "locale": "pt_BR",
+  "name": "Arthur Givigir",
+  "email": "agivigir@gmail.com",
+  "head": {
+    "title": "Arthur Givigir — Podcaster & iOS Developer",
+    "description": "Apresentador do Bom dia Tech e Senior iOS Engineer. Podcasts, apps e projetos de Arthur Givigir.",
+    "ogAlt": "Arthur Givigir: Lado A podcaster, Lado B developer"
+  },
+  "person": {
+    "jobTitle": "Senior iOS Engineer",
+    "city": "Rio de Janeiro",
+    "country": "BR",
+    "sameAs": [
+      "https://github.com/arthurgivigir",
+      "https://www.linkedin.com/in/arthurgivigir",
+      "https://www.instagram.com/arthur_givigir",
+      "https://www.threads.net/@arthur_givigir",
+      "https://mastodon.social/@arthur_givigir",
+      "https://gigahertz.fm/people/arthur-givigir",
+      "https://bomdia.tech"
+    ]
+  },
+  "ui": {
+    "language": "Idioma",
+    "slider": "Escolher lado: podcaster ou developer",
+    "stateDev": "Developer",
+    "stateMid": "Meio",
+    "statePod": "Podcaster",
+    "back": "Voltar",
+    "close": "Fechar",
+    "contact": "Contato:",
+    "status": {
+      "live": "No ar",
+      "paused": "Pausado",
+      "wip": "Em desenvolvimento",
+      "guest": "Convidado",
+      "featured": "Destaque"
+    }
+  },
+  "pod": {
+    "side": "Lado A",
+    "title": "Podcaster",
+    "lead": "Tecnologia e cultura pop no seu fone. Apresento o Bom dia Tech e estou toda sexta no Área de Transferência.",
+    "open": "Ouvir o lado A",
+    "sliver": "← Lado A",
+    "sliverRole": " · Podcaster",
+    "about": {
+      "title": "Sobre",
+      "text": "Faço podcast desde 2020. Hoje apresento o Bom dia Tech, com as principais notícias de tecnologia toda terça e quinta, e sou convidado especial recorrente do Área de Transferência. Também criei o A Era do Pixel, sobre cinema, séries e quadrinhos."
+    },
+    "shows": {
+      "title": "Podcasts",
+      "note": "Números de nov/2026.",
+      "items": [
+        {
+          "name": "Bom dia Tech",
+          "role": "Criador e apresentador",
+          "status": "live",
+          "description": "As principais notícias de tecnologia do momento, às terças e quintas.",
+          "meta": "705 episódios · desde 2020 · 4,8 no Apple Podcasts (49 avaliações)",
+          "cover": {
+            "src": "cover_bomdiatech.webp",
+            "alt": "Capa do podcast Bom dia Tech",
+            "width": 320,
+            "height": 320
+          },
+          "links": [
+            {
+              "label": "bomdia.tech",
+              "url": "https://bomdia.tech"
+            },
+            {
+              "label": "Apple Podcasts",
+              "url": "https://podcasts.apple.com/br/podcast/bom-dia-tech/id1510240259"
+            },
+            {
+              "label": "Spotify",
+              "url": "https://open.spotify.com/show/5rpatrW6OKU2gj6jCNKkO6"
+            }
+          ]
+        },
+        {
+          "name": "Área de Transferência (ADT)",
+          "role": "Convidado especial recorrente",
+          "status": "guest",
+          "description": "Com Marcus Mendes, Guilherme Rambo, Gustavo Faria e Bruno Casemiro.",
+          "meta": "Semanal, às sextas · rede Gigahertz",
+          "cover": {
+            "src": "cover_adt.webp",
+            "alt": "Capa do podcast Área de Transferência",
+            "width": 320,
+            "height": 320
+          },
+          "links": [
+            {
+              "label": "Gigahertz",
+              "url": "https://gigahertz.fm/podcasts/adt"
+            },
+            {
+              "label": "Apple Podcasts",
+              "url": "https://podcasts.apple.com/br/podcast/area-de-transferencia/id1187454543"
+            },
+            {
+              "label": "Spotify",
+              "url": "https://open.spotify.com/show/2BQichCuadNprsfp2uOwor"
+            }
+          ]
+        },
+        {
+          "name": "A Era do Pixel",
+          "role": "Criador e apresentador",
+          "status": "paused",
+          "description": "Cinema, séries, quadrinhos e animes.",
+          "meta": "29 episódios (2025) · 5,0 no Apple Podcasts",
+          "cover": {
+            "src": "cover_eradopixel.webp",
+            "alt": "Capa do podcast A Era do Pixel",
+            "width": 320,
+            "height": 320
+          },
+          "links": [
+            {
+              "label": "Apple Podcasts",
+              "url": "https://podcasts.apple.com/br/podcast/a-era-do-pixel/id1806868518"
+            }
+          ]
+        }
+      ]
+    },
+    "latest": {
+      "title": "Últimos episódios do Bom dia Tech",
+      "more": "Ver todos os episódios",
+      "moreUrl": "https://bomdia.tech"
+    },
+    "guest": {
+      "title": "Últimas participações no ADT",
+      "more": "Ver todas as participações",
+      "moreUrl": "https://gigahertz.fm/people/arthur-givigir"
+    },
+    "social": {
+      "title": "Onde me achar",
+      "handle": "@arthur_givigir",
+      "items": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/arthur_givigir"
+        },
+        {
+          "label": "Threads",
+          "url": "https://www.threads.net/@arthur_givigir"
+        },
+        {
+          "label": "Mastodon",
+          "url": "https://mastodon.social/@arthur_givigir",
+          "rel": "me"
+        }
+      ]
+    }
+  },
+  "dev": {
+    "side": "Lado B",
+    "path": "~/arthur",
+    "title": "developer",
+    "lead": "Senior iOS Engineer. Mais de 10 anos de mobile com Swift, SwiftUI, arquitetura modular, BLE e Flutter — e IA no fluxo de trabalho.",
+    "open": "Abrir o lado B",
+    "sliver": "Lado B",
+    "sliverRole": " · Developer",
+    "about": {
+      "title": "sobre",
+      "text": "Senior iOS & Mobile Engineer, do Rio de Janeiro, com mais de 10 anos de experiência. Especializado em Swift, SwiftUI, arquiteturas modulares, integração Bluetooth/BLE e Flutter, com passagens por fintech, IoT e e-commerce em larga escala. Uso Claude Code e OpenAI Codex no dia a dia, combinando desenvolvimento assistido por IA com avaliação crítica, decisão de arquitetura e responsabilidade pela entrega."
+    },
+    "apps": {
+      "title": "apps publicados",
+      "items": [
+        {
+          "name": "UP – Universe Path",
+          "status": "featured",
+          "feature": true,
+          "description": "iOS · o que assistir agora, por quê e quanto falta? Escolha um destino e siga uma jornada com curadoria até a estreia, com progresso e contagem regressiva.",
+          "url": "https://apps.apple.com/br/app/up-universe-path/id6818353995",
+          "cta": "App Store ↗",
+          "image": {
+            "src": "up.webp",
+            "alt": "Telas do app UP – Universe Path",
+            "width": 800,
+            "height": 425
+          }
+        },
+        {
+          "name": "Bollywood",
+          "description": "iOS · seu guia para a temporada de prêmios do cinema de 2026: indicados, sua lista de assistidos e bolão com os amigos.",
+          "url": "https://apps.apple.com/br/app/bollywood/id6759232508",
+          "cta": "App Store ↗",
+          "image": {
+            "src": "bollywood.webp",
+            "alt": "Telas do app Bollywood",
+            "width": 800,
+            "height": 425
+          }
+        },
+        {
+          "name": "Cegonha Adiantada",
+          "description": "iOS · calcula a idade do recém-nascido em dias e semanas, com histórico e widget.",
+          "url": "https://apps.apple.com/us/app/cegonha-adiantada/id6449395874",
+          "cta": "App Store ↗",
+          "image": {
+            "src": "cegonha_adiantada.webp",
+            "alt": "Telas do app Cegonha Adiantada",
+            "width": 800,
+            "height": 425
+          }
+        },
+        {
+          "name": "Zooin",
+          "description": "iOS · cotação do dólar em tempo real, com frases bem-humoradas e widget.",
+          "url": "https://apps.apple.com/us/app/zooin/id1565747154",
+          "cta": "App Store ↗",
+          "image": {
+            "src": "zooin.webp",
+            "alt": "Telas do app Zooin",
+            "width": 800,
+            "height": 413
+          }
+        }
+      ]
+    },
+    "web": {
+      "title": "projetos web · De Sola",
+      "notice": "Projetos feitos em colaboração voluntária com o De Sola. Marca, nomes, personagens e imagens pertencem ao De Sola e à TNT Sports; eu apenas ajudo no desenvolvimento.",
+      "items": [
+        {
+          "n": "01",
+          "title": "O Poderoso Burrão",
+          "sub": "Quiz que vai do 1º ano do Fundamental à 3ª série do Médio: até que ano você chega?",
+          "url": "https://opoderosoburrao.vercel.app",
+          "thumb": {
+            "src": "preview_burrao.webp",
+            "alt": "Prévia do site O Poderoso Burrão",
+            "width": 320,
+            "height": 200
+          }
+        },
+        {
+          "n": "02",
+          "title": "Simulador",
+          "sub": "Simule o Brasileirão rodada a rodada e o chaveamento da Copa do Brasil.",
+          "url": "https://opoderosoburrao.vercel.app/simulador",
+          "thumb": {
+            "src": "preview_simulador.webp",
+            "alt": "Prévia do site Simulador",
+            "width": 320,
+            "height": 200
+          }
+        },
+        {
+          "n": "03",
+          "title": "Gilro de Notícias",
+          "sub": "Roleta interativa para sortear e debater notícias.",
+          "thumb": {
+            "src": "preview_gilro.webp",
+            "alt": "Prévia do site Gilro de Notícias",
+            "width": 320,
+            "height": 200
+          }
+        }
+      ]
+    },
+    "oss": {
+      "title": "open source",
+      "items": [
+        {
+          "n": "gh",
+          "title": "vip-swiftui-template-xcode",
+          "sub": "Template de Xcode para VIP (Clean Swift) com SwiftUI.",
+          "url": "https://github.com/arthurgivigir/vip-swiftui-template-xcode"
+        },
+        {
+          "n": "gh",
+          "title": "InfiniteLoop",
+          "sub": "Pacote Swift com extensões que uso nos meus projetos.",
+          "url": "https://github.com/arthurgivigir/InfiniteLoop"
+        }
+      ]
+    },
+    "jobs": {
+      "title": "experiência",
+      "items": [
+        {
+          "n": "2026",
+          "title": "Software Engineer (iOS & Flutter) · EDS",
+          "sub": "jun 2026 — hoje",
+          "note": "SwiftUI com VIP, monorepo Flutter (Melos), wearables via CoreBluetooth/BLE."
+        },
+        {
+          "n": "2024",
+          "title": "iOS Software Engineer · Taller, para o PayPal",
+          "sub": "jun 2024 — jun 2026",
+          "note": "Transferências P2P: conversão de moeda, transparência de taxas, internacionalização."
+        },
+        {
+          "n": "2022",
+          "title": "iOS Developer · PicPay",
+          "sub": "jul 2022 — abr 2023",
+          "note": "Módulo de seguros e o novo Proteção Celular."
+        },
+        {
+          "n": "2021",
+          "title": "iOS Engineer · BEES Brasil",
+          "sub": "jun 2021 — jun 2022",
+          "note": "Nova arquitetura do módulo de carrinho."
+        },
+        {
+          "n": "2018",
+          "title": "Mobile Developer · Ingresso.com",
+          "sub": "jan 2018 — fev 2021",
+          "note": "Apple Pay (um dos primeiros apps do Brasil), migração para SwiftUI e SPM, WWDC 18."
+        },
+        {
+          "n": "2017",
+          "title": "Mobile Developer · Iplan",
+          "sub": "abr 2017 — jan 2018",
+          "note": "TAXI.RIO (Prefeitura do Rio), iOS em Swift e Android em Kotlin."
+        },
+        {
+          "n": "2010",
+          "title": "Analista de Sistemas · Vertigo, BRQ, Capgemini",
+          "sub": "2010 — 2016",
+          "note": "Java web e os primeiros apps iOS (ZapCarioca, Bradesco Seguros)."
+        }
+      ]
+    },
+    "edu": {
+      "title": "formação",
+      "items": [
+        {
+          "n": "now",
+          "title": "Pós-graduação em IA para Devs · FIAP",
+          "sub": "em andamento"
+        },
+        {
+          "n": "2016",
+          "title": "Pós-graduação MIT em Desenvolvimento Mobile · Instituto Infnet",
+          "sub": "2014–2016"
+        },
+        {
+          "n": "2014",
+          "title": "Design Gráfico · RedZero",
+          "sub": "2012–2014"
+        },
+        {
+          "n": "2013",
+          "title": "Tecnólogo em TI · Universidade Gama Filho",
+          "sub": "2010–2013"
+        },
+        {
+          "n": "2008",
+          "title": "Técnico em Eletrônica · CEFET/RJ",
+          "sub": "2006–2008"
+        }
+      ]
+    },
+    "stack": {
+      "title": "stack",
+      "items": [
+        "Swift",
+        "SwiftUI",
+        "Swift Concurrency",
+        "CoreBluetooth/BLE",
+        "VIP",
+        "MVVM",
+        "SPM",
+        "Flutter",
+        "Kotlin",
+        "Claude Code",
+        "OpenAI Codex"
+      ]
+    },
+    "links": {
+      "title": "links",
+      "items": [
+        {
+          "n": "gh",
+          "title": "GitHub",
+          "sub": "github.com/arthurgivigir",
+          "url": "https://github.com/arthurgivigir"
+        },
+        {
+          "n": "in",
+          "title": "LinkedIn",
+          "sub": "linkedin.com/in/arthurgivigir",
+          "url": "https://www.linkedin.com/in/arthurgivigir"
+        },
+        {
+          "n": "@",
+          "title": "E-mail",
+          "sub": "agivigir@gmail.com",
+          "url": "mailto:agivigir@gmail.com"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+# Republica o site para atualizar as listas de episódios (Bom dia Tech e ADT).
+# Não faz build aqui: só chama o deploy hook da Vercel, que roda o build
+# definido em vercel.json (lê os RSS e gera o site).
+#
+# Requer o secret VERCEL_DEPLOY_HOOK (Vercel → Settings → Git → Deploy Hooks).
+name: Atualizar episódios
+
+on:
+  schedule:
+    # Horários em UTC. Brasília = UTC-3.
+    - cron: '0 10 * * *'   # todo dia às 07:00: pega o Bom dia Tech (terças e quintas)
+    - cron: '0 19 * * 5'   # sexta às 16:00: pega o ADT do dia
+  workflow_dispatch:        # botão "Run workflow" para disparar na mão
+
+permissions: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Chamar o deploy hook da Vercel
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::error::Secret VERCEL_DEPLOY_HOOK não configurado"
+            exit 1
+          fi
+          curl -fsS -X POST "$HOOK" -o /dev/null

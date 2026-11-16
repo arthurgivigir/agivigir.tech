@@ -1,0 +1,227 @@
+<!--partial:rows-->
+<ul class="rows">
+{{#items}}  <li><{{tag}} class="row{{#thumb}} has-thumb{{/thumb}}"{{#url}} href="{{url}}"{{/url}}>{{#thumb}}<img class="thumb" src="{{@base}}{{src}}" alt="{{alt}}" width="{{width}}" height="{{height}}" loading="lazy" decoding="async">{{/thumb}}{{^thumb}}<span class="n">{{n}}</span>{{/thumb}}<span><b>{{title}}</b>{{#statusLabel}}<span class="badge {{status}}">{{statusLabel}}</span>{{/statusLabel}}{{#sub}}<small>{{sub}}</small>{{/sub}}{{#note}}<small>{{note}}</small>{{/note}}</span>{{#url}}<span class="go" aria-hidden="true">↗</span>{{/url}}</{{tag}}></li>
+{{/items}}</ul>
+<!--/partial:rows-->
+<!--partial:foot-->
+<footer class="foot">
+  <span>{{@ui.contact}} <a href="mailto:{{@email}}">{{@email}}</a></span>
+  <span>© {{@year}} {{@name}}</span>
+</footer>
+<!--/partial:foot-->
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{head.title}}</title>
+<meta name="description" content="{{head.description}}">
+<meta name="author" content="{{name}}">
+<meta name="theme-color" content="#FF7A1A">
+<link rel="canonical" href="{{pageUrl}}">
+<link rel="alternate" hreflang="pt-BR" href="{{site}}">
+<link rel="alternate" hreflang="en" href="{{site}}en/">
+<link rel="alternate" hreflang="x-default" href="{{site}}">
+<link rel="icon" href="{{base}}favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{base}}apple-touch-icon.png">
+<link rel="preload" as="image" href="{{base}}face.webp" fetchpriority="high">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="{{name}}">
+<meta property="og:title" content="{{head.title}}">
+<meta property="og:description" content="{{head.description}}">
+<meta property="og:url" content="{{pageUrl}}">
+<meta property="og:image" content="{{site}}og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{head.ogAlt}}">
+<meta property="og:locale" content="{{locale}}">
+<meta property="og:locale:alternate" content="{{altLocale}}">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{{{jsonld}}}</script>
+<style>{{{css}}}</style>
+<script>{{{js}}}</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wave" viewBox="0 0 64 22">
+    <rect x="0" y="8" width="4" height="6" rx="2"/><rect x="7.5" y="4" width="4" height="14" rx="2"/>
+    <rect x="15" y="0" width="4" height="22" rx="2"/><rect x="22.5" y="6" width="4" height="10" rx="2"/>
+    <rect x="30" y="2" width="4" height="18" rx="2"/><rect x="37.5" y="7" width="4" height="8" rx="2"/>
+    <rect x="45" y="3" width="4" height="16" rx="2"/><rect x="52.5" y="0" width="4" height="22" rx="2"/>
+    <rect x="60" y="8" width="4" height="6" rx="2"/>
+  </symbol>
+</svg>
+
+<nav class="lang" aria-label="{{ui.language}}">
+  <a href="{{hrefPt}}" hreflang="pt-BR" lang="pt-BR"{{#isPt}} aria-current="page"{{/isPt}}>PT</a><span aria-hidden="true">·</span><a href="{{hrefEn}}" hreflang="en" lang="en"{{^isPt}} aria-current="page"{{/isPt}}>EN</a>
+</nav>
+
+<main class="stage">
+
+  <!-- ═════════ ROSTO = ALÇA DO SLIDER (role/aria entram pelo app.js) ═════════ -->
+  <div class="me">
+    <div class="face" data-label="{{ui.slider}}" data-l-dev="{{ui.stateDev}}" data-l-mid="{{ui.stateMid}}" data-l-pod="{{ui.statePod}}">
+      <img src="{{base}}face.webp" alt="" width="560" height="560" draggable="false" fetchpriority="high">
+    </div>
+    <h1 class="name">{{name}}</h1>
+  </div>
+
+  <!-- ═════════ LADO A · PODCASTER ═════════ -->
+  <section class="panel pod" id="podcast" aria-labelledby="pod-title">
+    <div class="intro">
+      <p class="eyebrow"><i>{{pod.side}}</i> <svg class="wave" aria-hidden="true"><use href="#wave"/></svg></p>
+      <h2 id="pod-title">{{pod.title}}</h2>
+      <p class="lead">{{pod.lead}}</p>
+      <button class="btn btn-open" type="button">{{pod.open}} <span aria-hidden="true">→</span></button>
+      <button class="btn ghost btn-close" type="button" data-close><span aria-hidden="true">←</span> {{ui.back}}</button>
+    </div>
+
+    <div class="content">
+      <div class="content-head">
+        <strong aria-hidden="true">{{pod.title}}</strong>
+        <button class="btn ghost" type="button" data-close>{{ui.close}}</button>
+      </div>
+
+      <div class="block">
+        <h3>{{pod.about.title}}</h3>
+        <p class="prose">{{pod.about.text}}</p>
+      </div>
+
+      {{#pod.shows}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        <div class="cards">
+{{#items}}          <article class="card">
+            <span class="media">{{#cover}}<img class="art" src="{{@base}}{{src}}" alt="{{alt}}" width="{{width}}" height="{{height}}" loading="lazy" decoding="async">{{/cover}}<svg class="wave" viewBox="0 0 64 22" aria-hidden="true"><use href="#wave"/></svg></span>
+            <div class="body">
+              <span class="badge {{status}}">{{statusLabel}}</span>
+              <h4>{{name}}</h4>
+              <small>{{role}}</small>
+              <span class="desc">{{description}}</span>
+              <small>{{meta}}</small>
+              <ul class="chips links">{{#links}}<li><a class="chip" href="{{url}}">{{label}}</a></li>{{/links}}</ul>
+            </div>
+          </article>
+{{/items}}        </div>
+        <p class="note">{{note}}</p>
+      </div>
+      {{/pod.shows}}
+
+      {{#pod.latest}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        {{>rows}}
+        <a class="more" href="{{moreUrl}}">{{more}} <span aria-hidden="true">↗</span></a>
+      </div>
+      {{/pod.latest}}
+
+      {{#pod.guest}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        {{>rows}}
+        <a class="more" href="{{moreUrl}}">{{more}} <span aria-hidden="true">↗</span></a>
+      </div>
+      {{/pod.guest}}
+
+      {{#pod.social}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        <ul class="chips">
+          {{#items}}<li><a class="chip" href="{{url}}"{{#rel}} rel="{{rel}}"{{/rel}}>{{label}}</a></li>{{/items}}
+          <li class="handle">{{handle}}</li>
+        </ul>
+      </div>
+      {{/pod.social}}
+
+      {{>foot}}
+    </div>
+
+    <div class="sliver" aria-hidden="true"><span>{{pod.sliver}}<em>{{pod.sliverRole}}</em></span></div>
+  </section>
+
+  <!-- ═════════ LADO B · DEVELOPER ═════════ -->
+  <section class="panel dev" id="dev" aria-labelledby="dev-title">
+    <div class="intro">
+      <p class="eyebrow"><i>{{dev.side}}</i> <span>{{dev.path}}</span></p>
+      <h2 id="dev-title">{{dev.title}}</h2>
+      <p class="lead">{{dev.lead}}</p>
+      <button class="btn btn-open" type="button">{{dev.open}} <span aria-hidden="true">→</span></button>
+      <button class="btn ghost btn-close" type="button" data-close><span aria-hidden="true">←</span> {{ui.back}}</button>
+    </div>
+
+    <div class="content">
+      <div class="content-head">
+        <strong aria-hidden="true">{{dev.title}}</strong>
+        <button class="btn ghost" type="button" data-close>{{ui.close}}</button>
+      </div>
+
+      <div class="block">
+        <h3>{{dev.about.title}}</h3>
+        <p class="prose">{{dev.about.text}}</p>
+      </div>
+
+      {{#dev.stack}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        <ul class="chips">{{#items}}<li class="chip">{{.}}</li>{{/items}}</ul>
+      </div>
+      {{/dev.stack}}
+
+      {{#dev.apps}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        <div class="cards">
+{{#items}}          <{{tag}} class="card{{#feature}} feature{{/feature}}"{{#url}} href="{{url}}"{{/url}}>
+            {{#image}}<span class="media"><img src="{{@base}}{{src}}" alt="{{alt}}" width="{{width}}" height="{{height}}" loading="lazy" decoding="async"></span>{{/image}}{{^image}}<span class="media gen" aria-hidden="true"><span>{{mediaLabel}}</span></span>{{/image}}
+            <span class="body">{{#statusLabel}}<span class="badge {{status}}">{{statusLabel}}</span>{{/statusLabel}}<b>{{name}}</b><small>{{description}}</small>{{#cta}}<span class="cta">{{cta}}</span>{{/cta}}</span>
+          </{{tag}}>
+{{/items}}        </div>
+      </div>
+      {{/dev.apps}}
+
+      {{#dev.web}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        <p class="notice">{{notice}}</p>
+        {{>rows}}
+      </div>
+      {{/dev.web}}
+
+      {{#dev.oss}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        {{>rows}}
+      </div>
+      {{/dev.oss}}
+
+      {{#dev.jobs}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        {{>rows}}
+      </div>
+      {{/dev.jobs}}
+
+      {{#dev.edu}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        {{>rows}}
+      </div>
+      {{/dev.edu}}
+
+      {{#dev.links}}
+      <div class="block">
+        <h3>{{title}}</h3>
+        {{>rows}}
+      </div>
+      {{/dev.links}}
+
+      {{>foot}}
+    </div>
+
+    <div class="sliver" aria-hidden="true"><span>{{dev.sliver}}<em>{{dev.sliverRole}}</em> →</span></div>
+  </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "",
+  "buildCommand": "node scripts/episodes.mjs || echo 'RSS indisponível: usando o content/episodes.json do repositório'; node scripts/build.mjs",
+  "outputDirectory": "dist"
+}
